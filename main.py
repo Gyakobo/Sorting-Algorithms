@@ -127,11 +127,11 @@ def sorting_algorithm(sizes):
             
             if name == "Selection Sort":
                 print(RED + f"{name} completed for size {size} in {end_time - start_time:.4f} seconds." + RESET)
-            if name == "Insertion Sort":  
+            elif name == "Insertion Sort":  
                 print(GREEN + f"{name} completed for size {size} in {end_time - start_time:.4f} seconds." + RESET)
-            if name == "Heap Sort":  
+            elif name == "Heap Sort":  
                 print(YELLOW + f"{name} completed for size {size} in {end_time - start_time:.4f} seconds." + RESET)
-            if name == "Merge Sort":  
+            elif name == "Merge Sort":  
                 print(MAGENTA + f"{name} completed for size {size} in {end_time - start_time:.4f} seconds." + RESET)
             else:
                 print(CYAN + f"{name} completed for size {size} in {end_time - start_time:.4f} seconds." + RESET)
