@@ -66,6 +66,27 @@ def merge_sort(arr):
             j += 1
             k += 1
 
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    pivot_point = arr[len(arr) // 2]
+    left    = [] 
+    middle  = [] 
+    right   = [] 
+
+    for x in arr:
+        if x < pivot_point:
+            left.append(x)
+    for x in arr:
+        if x == pivot_point:
+            middle.append(x)
+    for x in arr:
+        if x > pivot_point:
+            right.append(x)
+
+    return quick_sort(left) + middle + quick_sort(right)
+
 arr = [5, 3, 2, 1, 4, 6]
-merge_sort(arr)
+quick_sort(arr)
 print(arr)
