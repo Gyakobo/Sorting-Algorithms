@@ -1,7 +1,8 @@
-import random
+from random import randint
 import time
 import heapq
 
+# Selection Sort
 def selection_sort(arr):
     n = len(arr)
 
@@ -14,6 +15,7 @@ def selection_sort(arr):
         
         arr[i], arr[min_index] = arr[min_index], arr[i]
 
+# Insertion Sort
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
@@ -24,6 +26,7 @@ def insertion_sort(arr):
             j -= 1
         arr[j + 1] = key
 
+# Heap Sort
 def heap_sort(arr):
     n = len(arr)
     heapq.heapify(arr)
@@ -34,6 +37,7 @@ def heap_sort(arr):
 
     arr[:] = sorted_arr 
 
+# Merge Sort
 def merge_sort(arr):
     if len(arr) > 1:
         mid_point = len(arr) // 2
@@ -66,6 +70,7 @@ def merge_sort(arr):
             j += 1
             k += 1
 
+# Quick Sort
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -86,7 +91,3 @@ def quick_sort(arr):
             right.append(x)
 
     return quick_sort(left) + middle + quick_sort(right)
-
-arr = [5, 3, 2, 1, 4, 6]
-quick_sort(arr)
-print(arr)
