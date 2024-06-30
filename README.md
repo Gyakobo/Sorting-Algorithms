@@ -7,5 +7,8 @@ Author: [Andrew Gyakobo](https://github.com/Gyakobo)
 
 ## Intro
 
+This intro serves to test out 5 various sorting algorithms and possibly determing their big-Oh notation through this example.
+
+## Methodology
 
 
