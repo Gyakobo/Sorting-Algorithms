@@ -114,7 +114,7 @@ def sorting_algorithm(sizes):
     results = {name: [] for name in algorithms}
 
     for size in sizes:
-        arr = [randint(0, 1000000) for _ in range(size)]
+        arr = [randint(0, 1000) for _ in range(size)]
         for name, func in algorithms.items():
             temp_arr = arr.copy()
             start_time = time.time()
