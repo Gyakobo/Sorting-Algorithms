@@ -91,3 +91,19 @@ def quick_sort(arr):
             right.append(x)
 
     return quick_sort(left) + middle + quick_sort(right)
+
+def sorting_algorithm(sizes):
+    algorithms = {
+        'Selection Sort': selection_sort,
+        'Insertion Sort': insertion_sort,
+        'Heap Sort': heap_sort,
+        'Merge Sort': merge_sort,
+        'Quick Sort': quick_sort
+    }
+
+    results = {name: [] for name in algorithms}
+
+    for size in sizes:
+        arr = [randint(0, 1000000) for _ in range(size)]
+        for name, func in algorithms.items():
+
