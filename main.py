@@ -24,7 +24,10 @@ def insertion_sort(arr):
             j -= 1
         arr[j + 1] = key
 
-
+def heap_sort(arr):
+    n = len(arr)
+    heapq.heapify(arr)
+    sorted_arr = 
 
 
 arr = [5, 3, 2, 1, 4, 6]
