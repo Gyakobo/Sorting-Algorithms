@@ -2,6 +2,16 @@ from random import randint
 import time
 import heapq
 
+# Colors
+# ANSI escape sequences for text colors
+RED = "\033[31m"
+GREEN = "\033[32m"
+YELLOW = "\033[33m"
+BLUE = "\033[34m"
+MAGENTA = "\033[35m"
+CYAN = "\033[36m"
+RESET = "\033[0m"
+
 # Selection Sort
 def selection_sort(arr):
     n = len(arr)
@@ -114,7 +124,19 @@ def sorting_algorithm(sizes):
                 func(temp_arr)
             end_time = time.time()
             results[name].append(end_time - start_time)
-            print(f"{name} completed for size {size} in {end_time - start_time:.4f} seconds.")
+            
+            if name == "Selection Sort":
+                print(RED + f"{name} completed for size {size} in {end_time - start_time:.4f} seconds." + RESET)
+            if name == "Insertion Sort":  
+                print(GREEN + f"{name} completed for size {size} in {end_time - start_time:.4f} seconds." + RESET)
+            if name == "Heap Sort":  
+                print(YELLOW + f"{name} completed for size {size} in {end_time - start_time:.4f} seconds." + RESET)
+            if name == "Merge Sort":  
+                print(MAGENTA + f"{name} completed for size {size} in {end_time - start_time:.4f} seconds." + RESET)
+            else:
+                print(CYAN + f"{name} completed for size {size} in {end_time - start_time:.4f} seconds." + RESET)
+
+        print(end="\n\n")
 
     return results
 
