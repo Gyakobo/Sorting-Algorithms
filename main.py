@@ -30,9 +30,11 @@ def heap_sort(arr):
     sorted_arr = []
     
     for _ in range(n):
-        sorted_arr.append(heapq.heappop(arr)) 
+        sorted_arr.append(heapq.heappop(arr))
+
+    arr[:] = sorted_arr 
 
 
 arr = [5, 3, 2, 1, 4, 6]
-insertion_sort(arr)
+heap_sort(arr)
 print(arr)
