@@ -27,7 +27,10 @@ def insertion_sort(arr):
 def heap_sort(arr):
     n = len(arr)
     heapq.heapify(arr)
-    sorted_arr = 
+    sorted_arr = []
+    
+    for _ in range(n):
+        sorted_arr.append(heapq.heappop(arr)) 
 
 
 arr = [5, 3, 2, 1, 4, 6]
