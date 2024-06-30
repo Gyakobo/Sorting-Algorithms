@@ -34,7 +34,38 @@ def heap_sort(arr):
 
     arr[:] = sorted_arr 
 
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid_point = len(arr) // 2
+        l = arr[:mid_point]
+        r = arr[mid_point:] 
+
+        merge_sort(l) 
+        merge_sort(r) 
+
+        i = 0
+        j = 0
+        k = 0
+
+        while i < len(l) and j < len(r):
+            if l[i] < r[j]:
+                arr[k] = l[i]
+                i += 1
+            else:
+                arr[k] = r[j]
+                j += 1
+            k += 1
+
+        while i < len(l):
+            arr[k] = l[i]
+            i += 1
+            k += 1
+        
+        while j < len(r):
+            arr[k] = r[j]
+            j += 1
+            k += 1
 
 arr = [5, 3, 2, 1, 4, 6]
-heap_sort(arr)
+merge_sort(arr)
 print(arr)
