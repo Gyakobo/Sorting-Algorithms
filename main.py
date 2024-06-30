@@ -106,4 +106,28 @@ def sorting_algorithm(sizes):
     for size in sizes:
         arr = [randint(0, 1000000) for _ in range(size)]
         for name, func in algorithms.items():
+            temp_arr = arr.copy()
+            start_time = time.time()
+            if name == "Quick Sort":
+                temp_arr = func(temp_arr)
+            else:
+                func(temp_arr)
+            end_time = time.time()
+            results[name].append(end_time - start_time)
+            print(f"{name} completed for size {size} in {end_time - start_time:.4f} seconds.")
+
+    return results
+
+def main():
+    sizes = [10, 100, 1000, 10000, 100000, 1000000, 10000000]
+    results = sorting_algorithm(sizes)
+
+    for name, times in results.items():
+        print(f"\n{name}:")
+        for size, time_taken in zip(sizes, times):
+            print(f"Size {size}: {time_taken:.4f} seconds")
+
+if __name__ == "__main__":
+    main()
+
 
