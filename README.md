@@ -114,29 +114,29 @@ Afterwards, we then write out the sorting algorithms:
 
 4) **Quick Sort** is typically the fastest of the algorithms tested due to its $O(n log n)$ average-case time complexity, though it has a worst-case time complexity of $O(n^{2})$. It is efficient for large datasets, but care must be taken to avoid the worst-case scenario (e.g., using a good pivot strategy).
 
-    ```python
-    # Quick Sort
-    def quick_sort(arr):
-        if len(arr) <= 1:
-            return arr
- 
-        pivot_point = arr[len(arr) // 2]
-        left    = [] 
-        middle  = [] 
-        right   = [] 
- 
-        for x in arr:
-            if x < pivot_point:
-                left.append(x)
-        for x in arr:
-            if x == pivot_point:
-                middle.append(x)
-        for x in arr:
-            if x > pivot_point:
-                right.append(x)
- 
-        return quick_sort(left) + middle + quick_sort(right)
-    ```
+```python
+# Quick Sort
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    pivot_point = arr[len(arr) // 2]
+    left    = [] 
+    middle  = [] 
+    right   = [] 
+
+    for x in arr:
+        if x < pivot_point:
+            left.append(x)
+    for x in arr:
+        if x == pivot_point:
+            middle.append(x)
+    for x in arr:
+        if x > pivot_point:
+            right.append(x)
+
+    return quick_sort(left) + middle + quick_sort(right)
+```
 
 ## License
 MIT
