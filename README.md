@@ -137,7 +137,7 @@ def quick_sort(arr):
     return quick_sort(left) + middle + quick_sort(right)
 ```
 
-## Conclusion && Recommendation
+## Conclusion && Recommendations
 
 * For small arrays, *insertion sort* can be surprisingly efficient due to its simplicity.
 * For larger arrays, *quicksort* is generally the best choice if implemented with a good pivot strategy.
