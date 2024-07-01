@@ -11,7 +11,7 @@ This intro serves to test out 5 various sorting algorithms and possibly determin
 
 ## Methodology
 
-For starters, we start by importing all the necessary libraries and their respective methods. On a side note, I also add a bunch of ANSI sequence that will color code the console outputted text.
+For starters, we start by importing all the necessary libraries and their respective methods. On a side note, I also add a bunch of ANSI sequence that will color code the console outputted text. By the way, if you're interested in color coding in python then please go through this [repo](https://github.com/Gyakobo/python-colored-console-output) I wrote.
 
 ```python
 from random import randint
