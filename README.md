@@ -3,6 +3,9 @@
 ![image](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 ![image](https://img.shields.io/badge/windows%20terminal-4D4D4D?style=for-the-badge&logo=windows%20terminal&logoColor=white)
 
+>[!IMPORTANT]
+>Needless to say, I run this program on an *AMD Ryzen 5 5625U with Radeon Graphics* and inevitably got not the best results in terms of performance. I however bid you my dear, visitor, to test out this project with better hardware and maybe commit to this project and add to my work.
+
 Author: [Andrew Gyakobo](https://github.com/Gyakobo)
 
 ## Intro
