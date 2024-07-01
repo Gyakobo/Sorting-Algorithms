@@ -137,5 +137,14 @@ def quick_sort(arr):
     return quick_sort(left) + middle + quick_sort(right)
 ```
 
+## Conclusion && Recommendation
+
+* For small arrays, *insertion sort* can be surprisingly efficient due to its simplicity.
+* For larger arrays, *quicksort* is generally the best choice if implemented with a good pivot strategy.
+* For applications requiring stable sorting or where memory usage is not a concern, *merge sort* is a good alternative.
+* *Heap sort* can be a good option for in-place sorting without additional memory requirements but is generally slower than quicksort.
+
+These results highlight the importance of choosing the right sorting algorithm based on the specific requirements and constraints of the problem at hand. 
+
 ## License
 MIT
