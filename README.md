@@ -61,6 +61,7 @@ def insertion_sort(arr):
             j -= 1
         arr[j + 1] = key
 ```
+---
 
 2) **Heap Sort** has $O(n log n)$ time complexity, making it much more efficienct for larger datasets compared to selection and insertion sort. It performs consistently well but usually not as fast as quicksort.
 
@@ -76,6 +77,7 @@ def heap_sort(arr):
 
     arr[:] = sorted_arr 
 ```
+---
 
 3) **Merge Sort** also has $O(n log n)$ time complexity and provides stable sorting, but it requires additional space for merging, which could be a disadvantage in memory-constrained environments.
 
@@ -113,6 +115,7 @@ def merge_sort(arr):
             j += 1
             k += 1
 ```
+---
 
 4) **Quick Sort** is typically the fastest of the algorithms tested due to its $O(n log n)$ average-case time complexity, though it has a worst-case time complexity of $O(n^{2})$. It is efficient for large datasets, but care must be taken to avoid the worst-case scenario (e.g., using a good pivot strategy).
 
